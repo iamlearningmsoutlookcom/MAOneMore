@@ -5,9 +5,9 @@ const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
 // healthcheck
-//router.get('/health', (req, res) => {
-//  res.status('200').send("Status: Health Check is all GOOD!");
-//});
+router.get('/health', (req, res) => {
+  res.status('200').send("Status: Health Check is all GOOD!");
+});
 
 // retrieve all musicians from data store
 router.get('/all', (req, res) => {
